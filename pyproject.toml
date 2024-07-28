@@ -31,7 +31,8 @@ dependencies = [
   'fastapi',
   'uvicorn',
   'python-dotenv',
-  'jinja2'
+  'jinja2',
+  'markdown2'
 ]
 
 

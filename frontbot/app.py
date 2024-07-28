@@ -3,6 +3,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi_simple_auth import SimpleAuth, logged_in_user
 from pydantic_settings import BaseSettings
 import requests
+import markdown2
 from fastapi.templating import Jinja2Templates
 
 
@@ -25,9 +26,13 @@ simpleauth = SimpleAuth(app)
 async def frontbot_view(rq: Request, user: logged_in_user) -> str:    
 
     r = requests.get(f"{settings.api_url}")
-    print(r)
+    rj = r.json()
+    print(rj)
+
+    html_content = markdown2.markdown(rj['text'])
+
     return templates.TemplateResponse(
-        request=rq, name="index.html", context={"id": id}
+        request=rq, name="index.html", context={"content": html_content }
     )
 
 

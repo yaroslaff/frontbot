@@ -1,4 +1,7 @@
 # frontbot
 
-Fronbot is lightweight proxy with authentication for your API
+Fronbot is lightweight authentication frontend/proxy for your API admin part
 
+~~~
+uvicorn --reload frontbot.app:app
+~~~
