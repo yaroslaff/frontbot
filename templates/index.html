@@ -14,9 +14,9 @@
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Logo">
             </a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                <span aria-hidden="true">11111</span>
+                <span aria-hidden="true">22222</span>
+                <span aria-hidden="true">33333</span>
             </a>
         </div>
 
@@ -30,10 +30,10 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-light" href="#">
+                        <a class="button is-light" href="/auth/profile">
                             Profile
                         </a>
-                        <a class="button is-danger" href="#">
+                        <a class="button is-danger" id="fastapi-simple-auth-logout-btn" href="#">
                             Logout
                         </a>
                     </div>
@@ -61,6 +61,9 @@
             </p>
         </div>
     </footer>
+
+    <!-- <script src="static/frontbot.js" defer></script> -->
+    <script src="/auth/static/js/simpleauth.js" defer></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {

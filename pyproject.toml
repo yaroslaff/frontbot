@@ -42,7 +42,7 @@ Issues = "https://github.com/yaroslaff/frontbot/issues"
 Source = "https://github.com/yaroslaff/frontbot"
 
 [project.scripts]
-demoapp = "frontbot.demoapp:main"
+frontbot-demoapp = "frontbot.demoapp:main"
 
 [tool.hatch.version]
 path = "frontbot/__init__.py"
