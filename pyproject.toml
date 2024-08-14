@@ -42,6 +42,7 @@ Issues = "https://github.com/yaroslaff/frontbot/issues"
 Source = "https://github.com/yaroslaff/frontbot"
 
 [project.scripts]
+frontbot = "frontbot:main"
 frontbot-demoapp = "frontbot.demoapp:main"
 
 [tool.hatch.version]

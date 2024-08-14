@@ -42,6 +42,19 @@
         </div>
     </nav>
 
+    {% if error %}
+    <article class="message is-danger">
+        <div class="message-header">
+          <p>Error</p>
+        </div>
+        <div class="message-body">
+          {{ error | safe }}
+      
+        </div>
+      </article>
+
+    {% else %}
+
     <!-- Main Content -->
     <section class="section">
         <div class="container">
@@ -51,6 +64,7 @@
             </div>
         </div>
     </section>
+    {% endif %}
 
     <!-- Footer -->
     <footer class="footer">
