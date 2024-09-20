@@ -33,6 +33,8 @@ APP_TITLE="FrontBot"
 APP_TOKEN="my-bearer-secret"
 APP_URL="http://localhost:8899/frontbot"
 
+CLIENT_IP_HEADER="x-forwarded-for"
+
 TURNSTILE_SITEKEY=0x...
 TURNSTILE_SECRET=0x...
 ~~~

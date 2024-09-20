@@ -1,22 +1,18 @@
-function logout(){
-    console.log('logout');
-    fetch('/auth/logout', {
-        method: 'POST',
-        redirect: 'manual'
-    }).then(res => {
-        if (res.ok) {
-            window.location.href = '/auth/login'
-        } else {
-            console.log('logout failed')
-        }
-    });
+
+function submitFrontBotForm(el){
+    console.log("submitForm", el);
+    // return false;
 }
 
 function init(){
-    // logout button
-    document.getElementById('logout-btn').addEventListener('click', e => {
-        logout()
-    })
+    const alertBtn = document.getElementById('alert-btn');
+    const alertModal = document.getElementById('alert-modal');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Close modal when "Close" button is clicked
+    closeBtn.addEventListener('click', () => {
+      alertModal.classList.remove('is-active');
+    });
 }
 
-// init();
+init();
